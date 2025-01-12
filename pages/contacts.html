@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacs</title>
+    <link rel="stylesheet" href="../styles/contacs.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- snowfall -->
+    <div id="snowfall-container"></div>
+
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="container">
+                <a href="../index.html" class="logo">New <span>Year </span><i class="fa-solid fa-gifts"></i></a>
+                <div class="nav-list">
+                    <a href="./history-of-new-year.html">История НГ</a>
+                    <a href="./films.html">Фильмы О НГ</a>
+                    <a href="./facts.html">Факты</a>
+                    <a class="nav-btn" href="./contacts.html">Контакты</a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="text-container">
+                <h1>Добавьте <span>Свое</span></h1>
+                <p>отправьте нам сообщение для дополнения к этому проекту.</p>
+                <a href="#contacts" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main of html document -->
+
+    <section class="contacts" id="contacts">
+        <div class="container-block">
+            <div class="text-container">
+                <h2>Свяжитесь С <span>Нами</span></h2>
+                <p>Станьте частью нашего проекта и отправьте нам сообщение.</p>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Ваше имя" name="name">
+                <input type="email" placeholder="Ваша почта" name="email">
+                <textarea name="messege" id="messege" placeholder="Ваше Сообщение"></textarea>
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="informations">
+        <div class="container-block">
+            <div class="text-container">
+                <h2>Больше <span>Контактов</span></h2>
+                <p>Наш телефон и наше местоположение</p>
+            </div>
+            <div class="container">
+                <div class="ours">
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+7 123 456 7890</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <p>г. Москва, ул. Пушкина, дом Калатушкина</p>
+                    </div>
+                </div>
+                <div class="map" style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/org/dom_kolotushkina/89067343641/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Дом Колотушкина</a><a href="https://yandex.kz/maps/1095/abakan/category/hardware_store/184107753/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Рождество на Агу</a><a href="https://yandex.kz/maps/1095/abakan/category/electric_and_gas_powered_tools/184107571/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">ТЫщ ТЫш ТЫщ</a><iframe src="https://yandex.kz/map-widget/v1/?ll=91.420785%2C53.714429&mode=search&oid=89067343641&ol=biz&z=16.5" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container-block">
+            <div class="text-footer">
+                <a href="#" class="logo">New <span>Year </span><i class="fa-solid fa-gifts"></i></a>
+                <p>&copy; 2024-2025 New Year / Haz. Все права защищены.</p>
+            </div>
+            <div class="links">
+                <a href="./history-of-new-year.html">История НГ</a>
+                <a href="./films.html">Фильмы О НГ</a>
+                <a href="./facts.html">Факты</a>
+                <a href="./contacts.html">Контакты </a>
+            </div>
+            <div class="soc">
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="instagramm"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- snowflake effect -->
+    <script src="../javascript/snow.js"></script>
+</body>
+</html>

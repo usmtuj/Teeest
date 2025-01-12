@@ -1,0 +1,140 @@
+/* header img */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../images/1920x1080-px-beautiful-Christmas-gift-holiday-merry-santa-snow-tree-winter-1796647.jpg) center/cover no-repeat;
+}
+
+/* main content */
+
+.history, .how-to-come {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.history img, .santa {
+    width: 600px;
+    box-shadow: 0px 0px 30px #a0a2ec71;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.history p {
+    padding: 10px;
+    background-color: #426f3e;
+    border-radius: 20px;
+    margin-left: 30px;
+} 
+
+/* history version 2 stylesheet */
+
+.history-2 img {
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+.history-2 p{
+    margin-left: 0;
+    margin-right: 50px;
+    background-color: rgb(151, 95, 95);
+    text-align: left;
+}
+
+.history-2{
+    text-align: right;
+}
+
+.history-2 .text-container {
+    margin-right: 50px;
+}
+
+/* our traditional */
+
+.our-versions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.our-versions .text-container {
+    margin-bottom: 100px;
+}
+
+.versions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+hr {
+    width: 100px;
+    margin: 10px;
+}
+
+.version {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #a0ecb471;
+    font-weight: bolder;
+}
+
+.japan {
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+}
+
+.china {
+    color: #ffe100;
+    background-color: #cd3232;
+}
+
+.india {
+    color: rgb(255, 255, 255);
+    background-color: #ffe100;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion-item {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.accordion-header i {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-out;
+}
+
+.accordion-item.active .accordion-header i {
+    transform: rotate(180deg);
+}
+
+.accordion {
+    width: 80%;
+    height: 100vh;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion-content p {
+    max-width: 300px;
+}
+
+.accordion .text-container {
+    margin-bottom: 100px;
+}

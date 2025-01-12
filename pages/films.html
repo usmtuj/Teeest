@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/film.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <!-- snowfall -->
+    <div id="snowfall-container"></div>
+
+
+    <!-- header -->
+
+    <header>
+        <nav>
+            <div class="container">
+                <a href="../index.html" class="logo">New <span>Year </span><i class="fa-solid fa-gifts"></i></a>
+                <div class="nav-list">
+                    <a href="./history-of-new-year.html">История НГ</a>
+                    <a href="./films.html">Фильмы О НГ</a>
+                    <a href="./facts.html">Факты</a>
+                    <a class="nav-btn" href="./contacts.html">Контакты</a>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="text-container">
+                <h1>Лучшие Фильмы <span>Нового Года!</span></h1>
+                <p>Мы порекомендуем вам лучшие фильмы для всей семьи и <span style="color: brown;font-weight: bolder;text-shadow: 0px 0px 20px #991b1bc3;">Страшных Фильмов</span>.</p>
+                <a href="#films" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main of html document -->
+    
+    <main>
+        <section class="films" id="films">
+
+            <div class="text-container">
+                <h2>Лучшие <span>Фильмы</span></h2>
+                <p>Наши порекомендуем вам лучшие фильмы для всей семьи а страшные фильмы дальше.</p>
+            </div>
+
+            <div class="swiper-container" style="width: 60%; margin: 0 auto;">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="../images/slide-alone.webp" alt="Movie 1">
+                        <div class="slide-content">
+                            <h3>Один дома</h3>
+                            <p>Классическая рождественская комедия о мальчике, который остался один дома на праздники.</p>
+                            <a class="btn" href="#">Смотреть</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="../images/slider-grinch.jpg" alt="Movie 2">
+                        <div class="slide-content">
+                            <h3>Гринч - похититель Рождества</h3>
+                            <p>Забавная история о зеленом существе, которое пытается украсть Рождество.</p>
+                            <a class="btn" href="#">Смотреть</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="../images/slide-polar.webp" alt="Movie 3">
+                        <div class="slide-content">
+                            <h3>Полярный экспресс</h3>
+                            <p>Волшебное путешествие мальчика на Северный полюс в канун Рождества.</p>
+                            <a class="btn" href="#">Смотреть</a>
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="../images/slide-christ.jfif" alt="Movie 3">
+                        <div class="slide-content">
+                            <h3>Рождественская история</h3>
+                            <p>Экранизация классической повести Чарльза Диккенса о скряге Эбенезере Скрудже.</p>
+                            <a class="btn" href="#">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <!-- Слайдер с страшными фильмами (новый) -->
+        <section style="margin-top: 100px;" class="films">
+            <div class="text-container">
+                <h2>Страшные <span>Фильмы</span></h2>
+                <p>Для тех, кто любит пощекотать нервы в новогоднюю ночь.</p>
+            </div>
+
+            <div class="swiper-container" style="width: 60%; margin: 0 auto;">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="../images/scary-movies/black-christmas.jpg" alt="Black Christmas">
+                        <div class="slide-content">
+                            <h3>Черное Рождество</h3>
+                            <p>Классический хоррор о серии убийств в студенческом общежитии на Рождество.</p>
+                            <a class="btn" href="#">Смотреть</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="../images/scary-movies/krampus.jpg" alt="Krampus">
+                        <div class="slide-content">
+                            <h3>Крампус</h3>
+                            <p>История о злом духе, который наказывает тех, кто не верит в Рождество.</p>
+                            <a class="btn" href="#">Смотреть</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="../images/scary-movies/the-lodge.jpg" alt="The Lodge">
+                        <div class="slide-content">
+                            <h3>Лодж</h3>
+                            <p>Психологический хоррор о семье, застрявшей в заснеженном домике.</p>
+                            <a class="btn" href="#">Смотреть</a>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="../images/scary-movies/wind-chill.jpg" alt="Wind Chill">
+                        <div class="slide-content">
+                            <h3>Морозный ветер</h3>
+                            <p>История о двух студентах, которые сталкиваются с призраками на заснеженной дороге.</p>
+                            <a class="btn" href="#">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container-block">
+            <div class="text-footer">
+                <a href="#" class="logo">New <span>Year </span><i class="fa-solid fa-gifts"></i></a>
+                <p>&copy; 2024-2025 New Year / Haz. Все права защищены.</p>
+            </div>
+            <div class="links">
+                <a href="./history-of-new-year.html">История НГ</a>
+                <a href="./films.html">Фильмы О НГ</a>
+                <a href="./facts.html">Факты</a>
+                <a href="./contacts.html">Контакты </a>
+            </div>
+            <div class="soc">
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="instagramm"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- snowflake effect -->
+    <script src="../javascript/snow.js"></script>
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../javascript/swiper.js"></script>
+</body>
+</html>

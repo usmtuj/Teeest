@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); /* link css font Roboto mono*/
+
+/* reset css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono';
+    transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(12,24,15,1) 0%, rgb(21, 57, 28) 100%);
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+button, input, textarea {
+    border: none !important;
+    width: 100%;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+/* header */
+
+header {
+    box-shadow:  0px 10px 30px #202f24;
+    background: url(../images/christmas_decorations_new_year_christmas_118570_3840x2400.jpg) center/cover no-repeat;
+    height: 100vh;
+    color: #fff;
+}
+
+nav {
+    z-index: 99999999999999999999;
+    box-shadow: 0px 8px 10px #204f2b7d;
+    background-color: #38664156;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.logo {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: rgb(248, 244, 198);
+    font-weight: bolder;
+}
+
+.logo i {
+    color: rgb(255, 178, 178);
+}
+
+span {
+    font-size: 1.8rem;
+    color: #a0ecaf;
+}
+
+/* links beautifully animations  */
+
+.nav-list a:not(.nav-btn)::before,
+.nav-list a:not(.nav-btn)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #a0ecaf;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:not(.nav-btn)::before {
+    left: 0;
+    top: -5px;
+}
+
+.nav-list a:not(.nav-btn)::after {
+    right: 0;
+    bottom: -5px;
+}
+
+.nav-list a:not(.nav-btn):hover {
+    color: #a0ecaf;
+}
+
+.nav-list a:not(.nav-btn):hover::before,
+.nav-list a:not(.nav-btn):hover::after {
+    width: 100%;
+}
+
+.nav-btn, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3c7b49;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn::before, .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.5s;
+}
+
+.nav-btn:hover, .btn:hover {
+    background-color: #3b9a51;
+    box-shadow: 0 0 10px rgba(160, 236, 175, 0.5);
+    color: #75e98c;
+}
+
+.nav-btn:hover::before, .btn:hover::before {
+    left: 100%;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.text-container {
+    margin-left: 50px;
+    max-width: 500px;
+}
+
+.text-container h1, .text-container h2, .text-container span {
+    font-size: 3rem;
+}
+
+.text-container p {
+    margin-block: 20px;
+}
+
+/* main */
+
+main {
+    padding: 100px 0;
+}
+
+/* about site stylesheet */
+
+.about {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about .text-container {
+    text-shadow: 3px 3px 20px #a0ecaf;
+}
+
+.about .img {
+    max-width: 400px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 50px;
+    box-shadow: 0px 0px 30px #a0a2ec71;
+    border-radius: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.wrapper audio {
+    border: 3px solid rgb(235, 91, 91);
+    border-radius: 80px;
+}
+
+.wrapper img {
+    width: 100px !important;
+    position: absolute;
+    margin-bottom: 55px;
+    margin-left: 210px;
+    filter: drop-shadow(5px 0px 10px rgba(149, 8, 8, 0.625));
+    z-index: 10;
+    object-fit: cover;
+}
+
+.text-container ul{
+    margin-left: 50px;
+}
+
+/* news  */
+
+.news {
+    margin-block: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.news img {
+    width: 100%;
+    object-fit: cover;
+    height: 40%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.news .text-container {
+    text-shadow: 3px 3px 20px #a0ecaf;
+    margin-bottom: 60px;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 70px !important;
+}
+
+.card {
+    width: 300px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #1c4925;
+    box-shadow: 10px 10px 30px 3px #0000003e, inset 5px 3px 10px rgba(255, 255, 255, 0.155);
+    border-radius: 10px;
+}
+
+.card-text{
+    text-shadow: 3px 3px 20px #a0ecaf;
+    margin-block: auto;
+}
+
+.card-text p {
+    margin-block: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: #0b1a0e;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0px;
+    box-shadow: -15px 0px 30px 10px #0b1a0e;
+}
+
+footer .container-block {
+    gap: 10px !important;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer .links {
+    margin-top: 5px;
+}
+
+footer .soc {
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+
+.facebook {
+    border-radius: 50%;
+    background: #3b5998;
+    padding: 8px 12px;
+}
+
+.instagramm {
+    border-radius: 50%;
+    background: #e4405f;
+    padding: 8px 14px;
+}
+
+.twitter {
+    border-radius: 50%;
+    background: #1da1f2;
+    padding: 8px 12px;
+}
+
+/* Snowfall effect */
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes snowflakes-shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(80px);
+    }
+}
+
+.video {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video iframe {
+    border: 6px solid #306e3f;
+    border-top: 15px solid #dddddd;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 330px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    nav .container {
+        flex-direction: column !important;
+    }
+
+    nav {
+        left: 0;
+        top: 0;
+        position: absolute;
+        padding: 0px !important;
+    }
+
+    .container-block {
+        text-align: center !important;
+    }
+
+    .container {
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse !important;
+        align-items: center;
+        text-align: center !important;
+        padding: 50px 0;
+    }
+
+    li {
+        text-align: left;
+        align-self: self-start;
+    }
+    
+    section {
+        margin-block: 400px !important;
+    }
+
+    section img {
+        margin-bottom: 50px;
+        margin-inline: auto !important;
+        width: 90% !important;
+    }
+
+    .news img {
+        width: 100% !important;
+    }
+
+    .films img {
+        width: 100% !important;
+        margin-bottom: 0px;
+    }
+
+    .video iframe {
+        margin-inline: auto !important;
+        margin-bottom: 50px !important;
+        width: 90% !important;
+        height: 300px;
+    }
+
+    .text-container {
+        margin-inline: auto !important;
+        width: 90% !important;
+    }
+
+    .wrapper img {
+        transform: translateX(200%);
+    }
+
+}

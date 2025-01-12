@@ -1,0 +1,90 @@
+/* header facts settings */
+
+header {
+    background: url(../images/header-facts-img.jfif) center/cover no-repeat;
+}
+
+/* facts */
+
+.facts {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facts .text-container {
+    margin-bottom: 100px;
+}
+
+.facts-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fact {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fact.a {
+    background: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.558)) ,url(../images/facts/fact-1.jfif) center/cover no-repeat;
+}
+
+.fact.b {
+    background: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.558)) ,url(../images/facts/fact-2.gif) center/cover no-repeat;
+}
+
+.fact.c {
+    background: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.558)) ,url(../images/facts/fact-3.webp) center/cover no-repeat;
+}
+
+.fact.d {
+    background: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.558)) ,url(../images/facts/fact-4.webp) center/cover no-repeat;
+}
+
+.fact.e {
+    background: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.558)) ,url(../images/facts/fact-5.jfif) center/cover no-repeat;
+}
+
+.fact h2 {
+    margin-bottom: 20px;
+}
+
+/* tarditions */
+
+.traditions {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.traditions img {
+    object-fit: cover;
+    object-position: center;
+    max-width: 500px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.trad-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+}
